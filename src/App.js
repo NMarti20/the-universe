@@ -1,7 +1,9 @@
 import React, { useState, Component } from "react";
 import axios from 'axios';
 import Header from "./components/Header/Header";
-import Mainvideo from './assets/earthVideo.mp4'
+import Mainvideo from './assets/earthVideo.mp4';
+import GetDate from './components/GetDate/GetDate';
+import Picture from './components/Picture/Picture'
 
 const baseURL = `https://api.nasa.gov/planetary/apod?api_key=AJV0AFfyYaPdUzakNA5eJH7eNnuy3EKux0PFiPrG`
 
@@ -29,9 +31,9 @@ class App extends Component {
     return (
       <div className="main">
         <Header />
-        {/* <GetDate updateDate={this.updateDate} /> */}
+        <GetDate updateDate={this.updateDate} />
         <video className="app__video" src={Mainvideo} autoPlay muted loop />
-        {/* <Picture photo={this.state.photo} /> */}
+        <Picture photo={this.state.photo} />
       </div>
     );
   }
