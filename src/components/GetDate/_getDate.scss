@@ -1,7 +1,15 @@
-.form{
-    text-align: center;
-    
-    &__label{
-        color:black;
+.form {
+  text-align: center;
+
+  &__container {
+    @media (min-width: 320px) {
+      display: flex;
+      flex-direction: column;
+      padding: 80px 50px 0 50px;
     }
+  }
+
+  &__label {
+    color: rgb(255, 255, 255);
+  }
 }

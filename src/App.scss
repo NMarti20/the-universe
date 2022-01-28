@@ -1,0 +1,27 @@
+.app {
+  position: relative;
+
+  &__video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &__info-container {
+    position: absolute;
+
+    @media (max-width: 768px) {
+      margin: 0 250px;
+    }
+
+    @media (min-width: 769px) {
+      margin: 0 550px;
+    }
+    @media (min-width: 1280px) {
+      margin: 0 850px;
+    }
+  }
+}

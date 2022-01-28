@@ -1,0 +1,23 @@
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  color: rgb(255, 255, 255);
+
+  &__main {
+    text-align: center;
+  }
+
+  &__image {
+    padding: 2rem;
+    max-height: 40vh;
+    border-radius: 15%;
+  }
+
+  &__heading {
+    padding: 0 2.2rem;
+  }
+}
